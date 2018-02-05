@@ -3,6 +3,5 @@ class StaticPagesController < ApplicationController
   end
 
   def secret
-    render 'secret'
   end
 end

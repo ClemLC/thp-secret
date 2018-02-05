@@ -5,7 +5,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Accueil", root_path %></li>
         <% if logged_in? %>
-              <ul>
+              <ul class="nav navbar-nav navbar-right">
                 <li>
                   <%= link_to "Se déconnecter", logout_path, method: :delete %>
                 </li>
