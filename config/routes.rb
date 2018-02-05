@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'users#index'
-  get '/inscription', to: 'users#inscription'
+  resources :users
+  root 'static_pages#home'
 end
