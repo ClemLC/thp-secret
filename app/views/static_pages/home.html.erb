@@ -1,26 +1,9 @@
-<link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-1.2.8.min.css"/>
-
 <div class="center jumbotron">
-  <h1>Bienvenu sur THP Secret !</h1>
+  <h1>Hey ! Bienvenu sur THP Secret !</h1>
 
-  <p>
-    T'es pas inscris ? Inscri toi !
-  </p>
+  <h2>
+    Connais-tu le secret de l'Univers ?
+  </h2>
 
-  <%= link_to "Je m'inscris !", new_user_path %>
-
-  <p>
-    Déjà inscris ? Log toi !
-  </p>
-
-      <%= form_for @user, url: {action: "Read"}, html: {class: "nifty_form"} do |f| %>
-    <p>Quel est ton mail</br>
-      <%= f.text_field :email %>
-    </p>
-
-    <%= form_for @user, url: {action: "Read"}, html: {class: "nifty_form"} do |f| %>
-      <p>Mot de pass ?</br>
-    <%= f.text_field :password_digest %>
-      </p>
-
+  <%= link_to "Connect toi", '#', class: "btn btn-lg btn-primary" %>
 </div>
